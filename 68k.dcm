@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP IS62WV51216BLL
+D 512K x 16 LOW VOLTAGE,ULTRA LOW POWER CMOS STATIC RAM
+K SRAM MEMORY
+F https://datasheet.lcsc.com/szlcsc/Integrated-Silicon-Solution-ISSI-IS62WV51216BLL-55TLI_C11315.pdf
+$ENDCMP
+#
+#End Doc Library

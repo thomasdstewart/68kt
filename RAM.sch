@@ -4002,120 +4002,14 @@ Wire Notes Line
 	6050 2750 6050 7900
 Wire Notes Line
 	6050 2750 11300 2750
-Text Notes 6850 6400 0    50   ~ 0
-https://datasheet.lcsc.com/szlcsc/Integrated-Silicon-Solution-ISSI-IS62WV51216BLL-55TLI_C11315.pdf\nhttps://datasheet.lcsc.com/szlcsc/1811201117_Advanced-Monolithic-Systems-AMS-AMS1117-3-3_C6186.pdf
-$Comp
-L Regulator_Linear:AMS1117-3.3 U?
-U 1 1 6018EFF3
-P 7300 5300
-AR Path="/6018EFF3" Ref="U?"  Part="1" 
-AR Path="/60206568/6018EFF3" Ref="U1"  Part="1" 
-F 0 "U1" H 7300 5542 50  0000 C CNN
-F 1 "AMS1117-3.3" H 7300 5451 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 7300 5500 50  0001 C CNN
-F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 7400 5050 50  0001 C CNN
-	1    7300 5300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR069
-U 1 1 60275F62
-P 6900 5200
-F 0 "#PWR069" H 6900 5050 50  0001 C CNN
-F 1 "+5V" H 6915 5373 50  0000 C CNN
-F 2 "" H 6900 5200 50  0001 C CNN
-F 3 "" H 6900 5200 50  0001 C CNN
-	1    6900 5200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR073
-U 1 1 6027740E
-P 7300 5700
-F 0 "#PWR073" H 7300 5450 50  0001 C CNN
-F 1 "GND" H 7305 5527 50  0000 C CNN
-F 2 "" H 7300 5700 50  0001 C CNN
-F 3 "" H 7300 5700 50  0001 C CNN
-	1    7300 5700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR077
-U 1 1 60278599
-P 7700 5200
-F 0 "#PWR077" H 7700 5050 50  0001 C CNN
-F 1 "+3.3V" H 7715 5373 50  0000 C CNN
-F 2 "" H 7700 5200 50  0001 C CNN
-F 3 "" H 7700 5200 50  0001 C CNN
-	1    7700 5200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP C2
-U 1 1 60280F5F
-P 7700 5550
-F 0 "C2" H 7818 5596 50  0000 L CNN
-F 1 "10uF (tantalum)" H 7818 5505 50  0000 L CNN
-F 2 "" H 7738 5400 50  0001 C CNN
-F 3 "~" H 7700 5550 50  0001 C CNN
-	1    7700 5550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR078
-U 1 1 6034D8C2
-P 7700 5700
-F 0 "#PWR078" H 7700 5450 50  0001 C CNN
-F 1 "GND" H 7705 5527 50  0000 C CNN
-F 2 "" H 7700 5700 50  0001 C CNN
-F 3 "" H 7700 5700 50  0001 C CNN
-	1    7700 5700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR070
-U 1 1 60644CEF
-P 6900 5700
-F 0 "#PWR070" H 6900 5450 50  0001 C CNN
-F 1 "GND" H 6905 5527 50  0000 C CNN
-F 2 "" H 6900 5700 50  0001 C CNN
-F 3 "" H 6900 5700 50  0001 C CNN
-	1    6900 5700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7000 5300 6900 5300
-Wire Wire Line
-	6900 5400 6900 5300
-Connection ~ 6900 5300
-Wire Wire Line
-	6900 5300 6900 5200
-Wire Wire Line
-	7600 5300 7700 5300
-Wire Wire Line
-	7700 5300 7700 5400
-Wire Wire Line
-	7700 5200 7700 5300
-Connection ~ 7700 5300
-$Comp
-L Device:CP C1
-U 1 1 608EAFD6
-P 6900 5550
-F 0 "C1" H 6700 5600 50  0000 L CNN
-F 1 "10uF (tantalum)" H 6150 5500 50  0000 L CNN
-F 2 "" H 6938 5400 50  0001 C CNN
-F 3 "~" H 6900 5550 50  0001 C CNN
-	1    6900 5550
-	1    0    0    -1  
-$EndComp
+Text Notes 7000 6500 0    50   ~ 0
+https://datasheet.lcsc.com/szlcsc/Integrated-Silicon-Solution-ISSI-IS62WV51216BLL-55TLI_C11315.pdf
 Wire Notes Line
 	8850 2750 8850 4950
 Wire Notes Line
 	8850 4950 6050 4950
 Wire Wire Line
 	2800 2850 2800 2950
-Wire Wire Line
-	7300 5600 7300 5700
 Text GLabel 8400 4600 2    50   BiDi ~ 0
 WR
 Wire Wire Line
@@ -4216,5 +4110,44 @@ F 2 "Package_TO_SOT_SMD:SOT-23" H 10650 2125 50  0001 L CIN
 F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 10450 2200 50  0001 L CNN
 	1    10450 2200
 	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 616CFDD7
+P 8800 5700
+AR Path="/5F9D5E69/616CFDD7" Ref="C?"  Part="1" 
+AR Path="/5F9DA3F8/616CFDD7" Ref="C?"  Part="1" 
+AR Path="/60206568/616CFDD7" Ref="C?"  Part="1" 
+F 0 "C?" H 8915 5746 50  0000 L CNN
+F 1 "100nF" H 8915 5655 50  0000 L CNN
+F 2 "" H 8838 5550 50  0001 C CNN
+F 3 "~" H 8800 5700 50  0001 C CNN
+	1    8800 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 616CFDDD
+P 8800 5850
+AR Path="/5F9D5E69/616CFDDD" Ref="#PWR?"  Part="1" 
+AR Path="/5F9DA3F8/616CFDDD" Ref="#PWR?"  Part="1" 
+AR Path="/60206568/616CFDDD" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8800 5600 50  0001 C CNN
+F 1 "GND" H 8805 5677 50  0000 C CNN
+F 2 "" H 8800 5850 50  0001 C CNN
+F 3 "" H 8800 5850 50  0001 C CNN
+	1    8800 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 61717859
+P 8800 5550
+F 0 "#PWR?" H 8800 5400 50  0001 C CNN
+F 1 "+3.3V" H 8815 5723 50  0000 C CNN
+F 2 "" H 8800 5550 50  0001 C CNN
+F 3 "" H 8800 5550 50  0001 C CNN
+	1    8800 5550
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

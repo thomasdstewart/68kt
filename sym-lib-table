@@ -1,3 +1,3 @@
 (sym_lib_table
-  (lib (name 68k)(type Legacy)(uri ${KIPRJMOD}/68k.lib)(options "")(descr ""))
+  (lib (name 68kt)(type Legacy)(uri ${KIPRJMOD}/68kt.lib)(options "")(descr ""))
 )

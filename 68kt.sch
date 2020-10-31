@@ -26,13 +26,13 @@ F0 "Loader" 118
 F1 "Loader.sch" 50
 $EndSheet
 Text Notes 5050 2100 0    50   ~ 0
-Memory Map\n$000000 $0FFFFF 1MiB RAM\n$100000 $17FFFF 1MiB Pseudo ROM\n$180000 $1FFFFF INVALID\n$200000 $27FFFF 1MiB Pseudo IO\n$280000 $3FFFFF INVALID\n$400000 $7FFFFF UNMAPPED\n\nRAM A20 address A19-A1\nROM A21 address A19-A1\nIO  A23 address A19-A1\nLOADER (A1-A23)\n\n
+Memory Map\n$000000 $0FFFFF 1MiB RAM\n$100000 $17FFFF 1MiB Pseudo ROM\n$180000 $1FFFFF INVALID\n$200000 $27FFFF 1MiB Pseudo IO\n$280000 $3FFFFF INVALID\n$400000 $7FFFFF UNMAPPED\n\nRAM A20 address A19-A1\nROM A21 address A19-A1\nIO  A23 address A19-A1\nLOADER (A23-A1)\n\n
 Text Notes 650  5100 0    50   ~ 0
-JLCPCB Part Reference\n\n74HC00D,653 Quad 2-input NAND gate\n74HC138D,653 3-to-8 line decoder/demultiplexer; inverting\n74HC165D,653 8-bit parallel-in/serial out shift register\n74HC245D,653 Octal bus tranceiver; 3-state\n74HC595D,118 8-bit serial-in, serial or parallel-out shift register with output latches; 3-state\n74HCT04 Hex inverter\n74HCT14 Hex inverting Schmitt trigger \n\n2N7002 MOSFET N TRENCH 60V 115MA 2.5V @ 250UA 7.5 \nAMS1117-3.3 1A LOW DROPOUT VOLTAGE REGULATOR\nFT232RL-REEL USB UART I.C.\nATMEGA2560-16AU 8-bit Atmel Microcontroller with 16/32/64KB In-System Programmable Flash\nIS62WV51216BLL-55TLI  512K x 16 LOW VOLTAGE,ULTRA LOW POWER CMOS STATIC RAM\n\nX322516MLB4SI SMD CRYSTAL RESONATORS 16MHZ\n\nTAJA106K016RNJ TANTALUM CAPACITORS 10UF 16V CASE-A_3216\n0603WAF820JT5E CHIP RESISTOR - SURFACE MOUNT 82OHMS ±1% 1/10W 0603 ROHS Basic Part \n0603WAF1500T5E  CHIP RESISTOR - SURFACE MOUNT 150OHMS ±1% 1/10W 060\n\n19-217/GHC-YR1S2/3T LIGHT EMITTING DIODES (LED) GREEN 520~535NM 112~258MCD@20MA TOP VIEW 0603 ROHS Basic Part\nvcc=5; i=20; vf=3.3; (vcc-vf)/(i/1000) = 85 Ohms (0.066W) (82 Ohms  0.1W)\n\nKT-0603R LIGHT EMITTING DIODES (LED) RED 520~625NM 90~100M\nvcc=5; i=20; vf=2.1; (vcc-vf)/(i/1000) = 145 Ohms (0.042) (150 Ohms  0.1W)\n\nhttps://ohmslawcalculator.com/led-resistor-calculator
+JLCPCB Part Reference\n\n74HC04D,653 Hex inverter\n74HC14D,653 Hex inverting Schmitt trigger \n74HC138D,653 3-to-8 line decoder/demultiplexer; inverting\n74HC164D,653 8-bit serial-in, parallel-out shift register\n74HC165D,653 8-bit parallel-in/serial out shift register\n74HC245D,653 Octal bus tranceiver; 3-state\n74HC595D,118 8-bit serial-in, serial or parallel-out shift register with output latches; 3-state\n\n\n2N7002 MOSFET N TRENCH 60V 115MA 2.5V @ 250UA 7.5 \nAMS1117-3.3 1A LOW DROPOUT VOLTAGE REGULATOR\nFT232RL-REEL USB UART I.C.\nATMEGA2560-16AU 8-bit Atmel Microcontroller with 16/32/64KB In-System Programmable Flash\nIS62WV51216BLL-55TLI  512K x 16 LOW VOLTAGE,ULTRA LOW POWER CMOS STATIC RAM\n\nX322516MLB4SI SMD CRYSTAL RESONATORS 16MHZ\n\nTAJA106K016RNJ TANTALUM CAPACITORS 10UF 16V CASE-A_3216\n0603WAF820JT5E CHIP RESISTOR - SURFACE MOUNT 82OHMS ±1% 1/10W 0603 ROHS Basic Part \n0603WAF1500T5E  CHIP RESISTOR - SURFACE MOUNT 150OHMS ±1% 1/10W 060\n\n19-217/GHC-YR1S2/3T LIGHT EMITTING DIODES (LED) GREEN 520~535NM 112~258MCD@20MA TOP VIEW 0603 ROHS Basic Part\nvcc=5; i=20; vf=3.3; (vcc-vf)/(i/1000) = 85 Ohms (0.066W) (82 Ohms  0.1W)\n\nKT-0603R LIGHT EMITTING DIODES (LED) RED 520~625NM 90~100M\nvcc=5; i=20; vf=2.1; (vcc-vf)/(i/1000) = 145 Ohms (0.042) (150 Ohms  0.1W)\n\nhttps://ohmslawcalculator.com/led-resistor-calculator
 Text Notes 650  6000 0    50   ~ 0
-TODO\nhalt led\nreset led\n68k clock\n68k addressing, /as /dtack, /uds /lds\n\nhttps://www.nxp.com/docs/en/user-guide/MC68332UM.pdf
+TODO\nhalt led\nreset led\n68k clock\natmega clock caps\n68k addressing, /as /dtack, /uds /lds\ncalculate pull pu and pull down resitors\ncheck no shorts\ncheck directions of signals\n\nhttps://www.nxp.com/docs/en/user-guide/MC68332UM.pdf
 Text Notes 600  7650 0    50   ~ 0
-URLS\n\nhttps://jlcpcb.com/parts\nhttps://hackaday.com/2016/12/05/taking-it-to-another-level-making-3-3v-and-5v-logic-communicate-with-level-shifters/\nhttps://electronics.stackexchange.com/questions/81580/step-up-3-3v-to-5v-for-digital-i-o\nhttps://electronics.stackexchange.com/questions/476140/driving-a-74hc245-in-one-direction-with-3-3v-when-vcc-is-5v\nhttps://www.eejournal.com/article/ultimate-guide-to-switch-debounce-part-4/\nhttps://www.newark.com/pdfs/techarticles/microchip/3_3vto5vAnalogTipsnTricksBrchr.pdf\nhttp://ee-classes.usc.edu/ee459/library/documents/I2C.pdf\nhttps://www.hobbytronics.co.uk/mosfet-voltage-level-converter\nhttps://rosco-m68k.com/\nhttps://www.aslak.net/\nhttp://www.users.cloud9.net/~stark/hardw68k.htm\nhttp://www.bitsavers.org/pdf/peripheralTechnology/PT68K2/PT68K-2_Users_Manual_Jun88.pdf\nhttps://www.nxp.com/docs/en/reference-manual/MC68000UM.pdf\nhttp://ww1.microchip.com/downloads/en/appnotes/atmel-2521-avr-hardware-design-considerations_applicationnote_avr042.pdf
+URLS\n\nhttps://jlcpcb.com/parts\nhttps://hackaday.com/2016/12/05/taking-it-to-another-level-making-3-3v-and-5v-logic-communicate-with-level-shifters/\nhttps://electronics.stackexchange.com/questions/81580/step-up-3-3v-to-5v-for-digital-i-o\nhttps://electronics.stackexchange.com/questions/476140/driving-a-74hc245-in-one-direction-with-3-3v-when-vcc-is-5v\nhttps://www.eejournal.com/article/ultimate-guide-to-switch-debounce-part-4/\nhttps://www.newark.com/pdfs/techarticles/microchip/3_3vto5vAnalogTipsnTricksBrchr.pdf\nhttp://ee-classes.usc.edu/ee459/library/documents/I2C.pdf\nhttps://www.hobbytronics.co.uk/mosfet-voltage-level-converter\nhttps://rosco-m68k.com/\nhttps://www.aslak.net/\nhttp://www.users.cloud9.net/~stark/hardw68k.htm\nhttp://www.bitsavers.org/pdf/peripheralTechnology/PT68K2/PT68K-2_Users_Manual_Jun88.pdf\nhttps://www.nxp.com/docs/en/reference-manual/MC68000UM.pdf\nhttp://ww1.microchip.com/downloads/en/appnotes/atmel-2521-avr-hardware-design-considerations_applicationnote_avr042.pdf\nhttps://www.chiark.greenend.org.uk/~theom/electronics/has/ha68ksys.pdf\nhttps://www.scss.tcd.ie/Michael.Manzke/1ba3/1BA3_34_io.pdf
 $Sheet
 S 3000 1000 1500 1500
 U 6046B06D
@@ -154,146 +154,146 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x03 J?
 U 1 1 613FD6F1
-P 10500 3100
+P 10450 2900
 AR Path="/5F9DA3F8/613FD6F1" Ref="J?"  Part="1" 
 AR Path="/613FD6F1" Ref="J?"  Part="1" 
-F 0 "J?" H 10580 3142 50  0000 L CNN
-F 1 "LOADER_CON" H 10580 3051 50  0000 L CNN
-F 2 "" H 10500 3100 50  0001 C CNN
-F 3 "~" H 10500 3100 50  0001 C CNN
-	1    10500 3100
+F 0 "J?" H 10530 2942 50  0000 L CNN
+F 1 "LOADER_CON" H 10530 2851 50  0000 L CNN
+F 2 "" H 10450 2900 50  0001 C CNN
+F 3 "~" H 10450 2900 50  0001 C CNN
+	1    10450 2900
 	1    0    0    -1  
 $EndComp
-Text GLabel 10300 3000 0    50   Input ~ 0
+Text GLabel 10250 2800 0    50   Input ~ 0
 LOADER_CON_RX
-Text GLabel 10300 3100 0    50   Output ~ 0
+Text GLabel 10250 2900 0    50   Output ~ 0
 LOADER_CON_TX
 $Comp
 L power:GND #PWR?
 U 1 1 613FD6F9
-P 10300 3200
+P 10250 3000
 AR Path="/5F9DA3F8/613FD6F9" Ref="#PWR?"  Part="1" 
 AR Path="/613FD6F9" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 10300 2950 50  0001 C CNN
-F 1 "GND" H 10305 3027 50  0000 C CNN
-F 2 "" H 10300 3200 50  0001 C CNN
-F 3 "" H 10300 3200 50  0001 C CNN
-	1    10300 3200
+F 0 "#PWR?" H 10250 2750 50  0001 C CNN
+F 1 "GND" H 10255 2827 50  0000 C CNN
+F 2 "" H 10250 3000 50  0001 C CNN
+F 3 "" H 10250 3000 50  0001 C CNN
+	1    10250 3000
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x04 J?
 U 1 1 613FD6FF
-P 10500 5150
+P 10450 4950
 AR Path="/5F9DA3F8/613FD6FF" Ref="J?"  Part="1" 
 AR Path="/613FD6FF" Ref="J?"  Part="1" 
-F 0 "J?" H 10580 5142 50  0000 L CNN
-F 1 "SPI" H 10580 5051 50  0000 L CNN
-F 2 "" H 10500 5150 50  0001 C CNN
-F 3 "~" H 10500 5150 50  0001 C CNN
-	1    10500 5150
+F 0 "J?" H 10530 4942 50  0000 L CNN
+F 1 "SPI" H 10530 4851 50  0000 L CNN
+F 2 "" H 10450 4950 50  0001 C CNN
+F 3 "~" H 10450 4950 50  0001 C CNN
+	1    10450 4950
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 613FD705
-P 10300 5350
+P 10250 5150
 AR Path="/5F9DA3F8/613FD705" Ref="#PWR?"  Part="1" 
 AR Path="/613FD705" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 10300 5100 50  0001 C CNN
-F 1 "GND" H 10305 5177 50  0000 C CNN
-F 2 "" H 10300 5350 50  0001 C CNN
-F 3 "" H 10300 5350 50  0001 C CNN
-	1    10300 5350
+F 0 "#PWR?" H 10250 4900 50  0001 C CNN
+F 1 "GND" H 10255 4977 50  0000 C CNN
+F 2 "" H 10250 5150 50  0001 C CNN
+F 3 "" H 10250 5150 50  0001 C CNN
+	1    10250 5150
 	1    0    0    -1  
 $EndComp
-Text GLabel 10300 5150 0    50   Output ~ 0
+Text GLabel 10250 4950 0    50   Output ~ 0
 MOSI
-Text GLabel 10300 5250 0    50   Input ~ 0
+Text GLabel 10250 5050 0    50   Input ~ 0
 MISO
-Text GLabel 10300 5050 0    50   Output ~ 0
+Text GLabel 10250 4850 0    50   Output ~ 0
 SCK
 $Comp
 L power:GND #PWR?
 U 1 1 613FD70E
-P 10250 6050
+P 10200 5850
 AR Path="/5F9DA3F8/613FD70E" Ref="#PWR?"  Part="1" 
 AR Path="/613FD70E" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 10250 5800 50  0001 C CNN
-F 1 "GND" H 10255 5877 50  0000 C CNN
-F 2 "" H 10250 6050 50  0001 C CNN
-F 3 "" H 10250 6050 50  0001 C CNN
-	1    10250 6050
+F 0 "#PWR?" H 10200 5600 50  0001 C CNN
+F 1 "GND" H 10205 5677 50  0000 C CNN
+F 2 "" H 10200 5850 50  0001 C CNN
+F 3 "" H 10200 5850 50  0001 C CNN
+	1    10200 5850
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x03 J?
 U 1 1 613FD714
-P 10450 5950
+P 10400 5750
 AR Path="/5F9DA3F8/613FD714" Ref="J?"  Part="1" 
 AR Path="/613FD714" Ref="J?"  Part="1" 
-F 0 "J?" H 10530 5992 50  0000 L CNN
-F 1 "I2C" H 10530 5901 50  0000 L CNN
-F 2 "" H 10450 5950 50  0001 C CNN
-F 3 "~" H 10450 5950 50  0001 C CNN
-	1    10450 5950
+F 0 "J?" H 10480 5792 50  0000 L CNN
+F 1 "I2C" H 10480 5701 50  0000 L CNN
+F 2 "" H 10400 5750 50  0001 C CNN
+F 3 "~" H 10400 5750 50  0001 C CNN
+	1    10400 5750
 	1    0    0    -1  
 $EndComp
-Text GLabel 10250 5950 0    50   BiDi ~ 0
+Text GLabel 10200 5750 0    50   BiDi ~ 0
 SDA
-Text GLabel 10250 5850 0    50   Output ~ 0
+Text GLabel 10200 5650 0    50   Output ~ 0
 SCL
-Text GLabel 10300 3650 0    50   Input ~ 0
+Text GLabel 10250 3450 0    50   Input ~ 0
 68KT_CON_RX
-Text GLabel 10300 3750 0    50   Output ~ 0
+Text GLabel 10250 3550 0    50   Output ~ 0
 68KT_CON_TX
 $Comp
 L power:GND #PWR?
 U 1 1 613FD71E
-P 10300 3850
+P 10250 3650
 AR Path="/5F9DA3F8/613FD71E" Ref="#PWR?"  Part="1" 
 AR Path="/613FD71E" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 10300 3600 50  0001 C CNN
-F 1 "GND" H 10305 3677 50  0000 C CNN
-F 2 "" H 10300 3850 50  0001 C CNN
-F 3 "" H 10300 3850 50  0001 C CNN
-	1    10300 3850
+F 0 "#PWR?" H 10250 3400 50  0001 C CNN
+F 1 "GND" H 10255 3477 50  0000 C CNN
+F 2 "" H 10250 3650 50  0001 C CNN
+F 3 "" H 10250 3650 50  0001 C CNN
+	1    10250 3650
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x03 J?
 U 1 1 613FD724
-P 10500 3750
+P 10450 3550
 AR Path="/5F9DA3F8/613FD724" Ref="J?"  Part="1" 
 AR Path="/613FD724" Ref="J?"  Part="1" 
-F 0 "J?" H 10580 3792 50  0000 L CNN
-F 1 "68KT_CON" H 10580 3701 50  0000 L CNN
-F 2 "" H 10500 3750 50  0001 C CNN
-F 3 "~" H 10500 3750 50  0001 C CNN
-	1    10500 3750
+F 0 "J?" H 10530 3592 50  0000 L CNN
+F 1 "68KT_CON" H 10530 3501 50  0000 L CNN
+F 2 "" H 10450 3550 50  0001 C CNN
+F 3 "~" H 10450 3550 50  0001 C CNN
+	1    10450 3550
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x04 J?
 U 1 1 613FD72A
-P 10500 4400
+P 10450 4200
 AR Path="/5F9D5E69/613FD72A" Ref="J?"  Part="1" 
 AR Path="/5F9DA3F8/613FD72A" Ref="J?"  Part="1" 
 AR Path="/613FD72A" Ref="J?"  Part="1" 
-F 0 "J?" H 10418 3975 50  0000 C CNN
-F 1 "USB" H 10418 4066 50  0000 C CNN
-F 2 "" H 10500 4400 50  0001 C CNN
-F 3 "~" H 10500 4400 50  0001 C CNN
-	1    10500 4400
+F 0 "J?" H 10368 3775 50  0000 C CNN
+F 1 "USB" H 10368 3866 50  0000 C CNN
+F 2 "" H 10450 4200 50  0001 C CNN
+F 3 "~" H 10450 4200 50  0001 C CNN
+	1    10450 4200
 	1    0    0    -1  
 $EndComp
-Text GLabel 10300 4300 0    50   Input ~ 0
+Text GLabel 10250 4100 0    50   Input ~ 0
 USB_VBUS
-Text GLabel 10300 4400 0    50   BiDi ~ 0
+Text GLabel 10250 4200 0    50   BiDi ~ 0
 USB_D+
-Text GLabel 10300 4500 0    50   BiDi ~ 0
+Text GLabel 10250 4300 0    50   BiDi ~ 0
 USB_D-
-Text GLabel 10300 4600 0    50   UnSpc ~ 0
+Text GLabel 10250 4400 0    50   UnSpc ~ 0
 USB_GND
 $Comp
 L Connector:USB_B_Micro J?

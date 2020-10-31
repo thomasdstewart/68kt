@@ -1188,4 +1188,144 @@ Wire Wire Line
 	2750 4800 3000 4800
 Wire Wire Line
 	3000 4800 3000 4600
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5FE25891
+P 7500 2600
+F 0 "SW?" H 7500 2885 50  0000 C CNN
+F 1 "SW_LOADER_RESET" H 7500 2794 50  0000 C CNN
+F 2 "" H 7500 2800 50  0001 C CNN
+F 3 "~" H 7500 2800 50  0001 C CNN
+	1    7500 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HCT04 U?
+U 1 1 5FE3620D
+P 8250 3700
+F 0 "U?" H 8250 4017 50  0000 C CNN
+F 1 "74HCT04" H 8250 3926 50  0000 C CNN
+F 2 "" H 8250 3700 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 8250 3700 50  0001 C CNN
+	1    8250 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HCT04 U?
+U 2 1 5FE379C6
+P 7800 5200
+F 0 "U?" H 7800 5517 50  0000 C CNN
+F 1 "74HCT04" H 7800 5426 50  0000 C CNN
+F 2 "" H 7800 5200 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 7800 5200 50  0001 C CNN
+	2    7800 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HCT04 U?
+U 3 1 5FE3B3F5
+P 12250 2950
+F 0 "U?" H 12250 3267 50  0000 C CNN
+F 1 "74HCT04" H 12250 3176 50  0000 C CNN
+F 2 "" H 12250 2950 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 12250 2950 50  0001 C CNN
+	3    12250 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HCT04 U?
+U 4 1 5FE3D85A
+P 12350 3550
+F 0 "U?" H 12350 3867 50  0000 C CNN
+F 1 "74HCT04" H 12350 3776 50  0000 C CNN
+F 2 "" H 12350 3550 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 12350 3550 50  0001 C CNN
+	4    12350 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HCT04 U?
+U 5 1 5FE3EF29
+P 13150 2850
+F 0 "U?" H 13150 3167 50  0000 C CNN
+F 1 "74HCT04" H 13150 3076 50  0000 C CNN
+F 2 "" H 13150 2850 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 13150 2850 50  0001 C CNN
+	5    13150 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HCT04 U?
+U 6 1 5FE404BC
+P 13250 3550
+F 0 "U?" H 13250 3867 50  0000 C CNN
+F 1 "74HCT04" H 13250 3776 50  0000 C CNN
+F 2 "" H 13250 3550 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 13250 3550 50  0001 C CNN
+	6    13250 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HCT04 U?
+U 7 1 5FE41EF5
+P 14100 3650
+F 0 "U?" H 14330 3696 50  0000 L CNN
+F 1 "74HCT04" H 14330 3605 50  0000 L CNN
+F 2 "" H 14100 3650 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 14100 3650 50  0001 C CNN
+	7    14100 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5FE5C9AF
+P 8550 3850
+AR Path="/5F9D5E69/5FE5C9AF" Ref="D?"  Part="1" 
+AR Path="/5F9DA3F8/5FE5C9AF" Ref="D?"  Part="1" 
+F 0 "D?" V 8589 3732 50  0000 R CNN
+F 1 "LED7_RED" V 8498 3732 50  0000 R CNN
+F 2 "" H 8550 3850 50  0001 C CNN
+F 3 "~" H 8550 3850 50  0001 C CNN
+	1    8550 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FE5DBCA
+P 8500 4400
+F 0 "#PWR?" H 8500 4150 50  0001 C CNN
+F 1 "GND" H 8505 4227 50  0000 C CNN
+F 2 "" H 8500 4400 50  0001 C CNN
+F 3 "" H 8500 4400 50  0001 C CNN
+	1    8500 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5FE71803
+P 8100 5350
+AR Path="/5F9D5E69/5FE71803" Ref="D?"  Part="1" 
+AR Path="/5F9DA3F8/5FE71803" Ref="D?"  Part="1" 
+F 0 "D?" V 8139 5232 50  0000 R CNN
+F 1 "LED7_RED" V 8048 5232 50  0000 R CNN
+F 2 "" H 8100 5350 50  0001 C CNN
+F 3 "~" H 8100 5350 50  0001 C CNN
+	1    8100 5350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FE71809
+P 8100 5500
+F 0 "#PWR?" H 8100 5250 50  0001 C CNN
+F 1 "GND" H 8105 5327 50  0000 C CNN
+F 2 "" H 8100 5500 50  0001 C CNN
+F 3 "" H 8100 5500 50  0001 C CNN
+	1    8100 5500
+	1    0    0    -1  
+$EndComp
+Text GLabel 7950 3700 0    50   Input ~ 0
+~HALT
+Text GLabel 7500 5200 0    50   Input ~ 0
+~RESET
 $EndSCHEMATC

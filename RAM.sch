@@ -3555,7 +3555,7 @@ Text GLabel 9550 5650 0    50   Input ~ 0
 Text GLabel 9550 5550 0    50   Input ~ 0
 3LDS
 $Comp
-L 68k:IS62WV51216BLL U?
+L 68kt-rescue:IS62WV51216BLL-68k U?
 U 1 1 60B99E7C
 P 10150 4500
 AR Path="/60B99E7C" Ref="U?"  Part="1" 
@@ -4002,12 +4002,12 @@ Wire Notes Line
 	6050 2750 6050 7900
 Wire Notes Line
 	6050 2750 11300 2750
-Text Notes 7000 6500 0    50   ~ 0
-https://datasheet.lcsc.com/szlcsc/Integrated-Silicon-Solution-ISSI-IS62WV51216BLL-55TLI_C11315.pdf
+Text Notes 7000 6950 0    50   ~ 0
+IS62WV51216BLL - 16Bit Wide Static Ram\nhttps://datasheet.lcsc.com/szlcsc/Integrated-Silicon-Solution-ISSI-IS62WV51216BLL-55TLI_C11315.pdf\nAdressed with 19 lines making 1024 KiB (2^19*16/8/1024)\n40 * 2N7002 N-Channel Mosfets for 5 to 3.3 Voltage shifting\nMemory access with A20, read with RD, write with WR, Uppper and lower controller with UDS and LDS
 Wire Notes Line
-	8850 2750 8850 4950
+	8850 2750 8850 5100
 Wire Notes Line
-	8850 4950 6050 4950
+	8850 5100 6050 5100
 Wire Wire Line
 	2800 2850 2800 2950
 Text GLabel 8400 4600 2    50   BiDi ~ 0
@@ -4150,4 +4150,10 @@ F 3 "" H 8800 5550 50  0001 C CNN
 	1    8800 5550
 	1    0    0    -1  
 $EndComp
+Text Notes 6100 2700 0    50   ~ 0
+Address A1 - A20
+Text Notes 6000 4350 1    50   ~ 0
+Data D0 - D15
+Text Notes 7700 5050 0    50   ~ 0
+Control (LDS, UDS, RD, RW)
 $EndSCHEMATC

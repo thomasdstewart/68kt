@@ -161,45 +161,19 @@ CLOCK
 Text GLabel 2100 4750 0    50   Input ~ 0
 ~DTACK
 $Comp
-L Device:C C?
-U 1 1 5FA98E79
-P 6400 1950
-AR Path="/5F9DA3F8/5FA98E79" Ref="C?"  Part="1" 
-AR Path="/6046B06D/5FA98E79" Ref="C15"  Part="1" 
-F 0 "C15" H 6285 1904 50  0000 R CNN
-F 1 "22nF" H 6285 1995 50  0000 R CNN
-F 2 "" H 6438 1800 50  0001 C CNN
-F 3 "~" H 6400 1950 50  0001 C CNN
-	1    6400 1950
-	-1   0    0    1   
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5FA98E7F
-P 5950 1650
+P 5850 2500
 AR Path="/5F9DA3F8/5FA98E7F" Ref="#PWR?"  Part="1" 
 AR Path="/6046B06D/5FA98E7F" Ref="#PWR0138"  Part="1" 
-F 0 "#PWR0138" H 5950 1400 50  0001 C CNN
-F 1 "GND" H 5955 1477 50  0000 C CNN
-F 2 "" H 5950 1650 50  0001 C CNN
-F 3 "" H 5950 1650 50  0001 C CNN
-	1    5950 1650
+F 0 "#PWR0138" H 5850 2250 50  0001 C CNN
+F 1 "GND" H 5855 2327 50  0000 C CNN
+F 2 "" H 5850 2500 50  0001 C CNN
+F 3 "" H 5850 2500 50  0001 C CNN
+	1    5850 2500
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:Crystal_GND24 Y?
-U 1 1 5FA98E85
-P 6200 1400
-AR Path="/5F9DA3F8/5FA98E85" Ref="Y?"  Part="1" 
-AR Path="/6046B06D/5FA98E85" Ref="Y2"  Part="1" 
-F 0 "Y2" H 6300 1600 50  0000 L CNN
-F 1 "16MHz" H 6400 1550 50  0000 L CNN
-F 2 "" H 6200 1400 50  0001 C CNN
-F 3 "~" H 6200 1400 50  0001 C CNN
-	1    6200 1400
-	1    0    0    -1  
-$EndComp
-Text GLabel 5850 1400 0    50   Output ~ 0
+Text GLabel 7350 1600 2    50   Output ~ 0
 CLOCK
 $Comp
 L Device:C C14
@@ -267,17 +241,6 @@ F 1 "GND" H 9305 1827 50  0000 C CNN
 F 2 "" H 9300 2000 50  0001 C CNN
 F 3 "" H 9300 2000 50  0001 C CNN
 	1    9300 2000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0139
-U 1 1 5FAA3893
-P 9300 1000
-F 0 "#PWR0139" H 9300 850 50  0001 C CNN
-F 1 "+5V" H 9315 1173 50  0000 C CNN
-F 2 "" H 9300 1000 50  0001 C CNN
-F 3 "" H 9300 1000 50  0001 C CNN
-	1    9300 1000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -390,8 +353,305 @@ Text Notes 8400 6350 0    50   ~ 0
 https://www.nxp.com/docs/en/reference-manual/MC68000UM.pdf
 Text Notes 4300 3850 0    50   ~ 0
 A20 is RAM CE\nA21 is Pseudo ROM\nA22 is Pseudo IO
-Text GLabel 5650 5800 2    50   BiDi ~ 0
+Text GLabel 5400 5650 2    50   BiDi ~ 0
 RW
-Text GLabel 5600 5600 2    50   BiDi ~ 0
+Text GLabel 5350 5450 2    50   BiDi ~ 0
 RD
+$Comp
+L 74xx:74LS138 U?
+U 1 1 5F9B9234
+P 6650 4450
+F 0 "U?" H 6650 4350 50  0000 C CNN
+F 1 "74LS138" H 6650 4450 50  0000 C CNN
+F 2 "" H 6650 4450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS138" H 6650 4450 50  0001 C CNN
+	1    6650 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC164 U?
+U 1 1 5F9BD54D
+P 9550 4850
+F 0 "U?" H 9550 4850 50  0000 C CNN
+F 1 "74HC164" H 9550 4950 50  0000 C CNN
+F 2 "" H 10450 4550 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT164.pdf" H 10450 4550 50  0001 C CNN
+	1    9550 4850
+	1    0    0    -1  
+$EndComp
+Text GLabel 9150 5150 0    50   Input ~ 0
+CLOCK
+$Comp
+L power:+5V #PWR0139
+U 1 1 5FAA3893
+P 9300 1000
+F 0 "#PWR0139" H 9300 850 50  0001 C CNN
+F 1 "+5V" H 9315 1173 50  0000 C CNN
+F 2 "" H 9300 1000 50  0001 C CNN
+F 3 "" H 9300 1000 50  0001 C CNN
+	1    9300 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F9C309F
+P 9550 4350
+F 0 "#PWR?" H 9550 4200 50  0001 C CNN
+F 1 "+5V" H 9565 4523 50  0000 C CNN
+F 2 "" H 9550 4350 50  0001 C CNN
+F 3 "" H 9550 4350 50  0001 C CNN
+	1    9550 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F9C3703
+P 6650 3850
+F 0 "#PWR?" H 6650 3700 50  0001 C CNN
+F 1 "+5V" H 6665 4023 50  0000 C CNN
+F 2 "" H 6650 3850 50  0001 C CNN
+F 3 "" H 6650 3850 50  0001 C CNN
+	1    6650 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F9C3D60
+P 9550 5450
+F 0 "#PWR?" H 9550 5200 50  0001 C CNN
+F 1 "GND" H 9555 5277 50  0000 C CNN
+F 2 "" H 9550 5450 50  0001 C CNN
+F 3 "" H 9550 5450 50  0001 C CNN
+	1    9550 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F9C4334
+P 6650 5150
+F 0 "#PWR?" H 6650 4900 50  0001 C CNN
+F 1 "GND" H 6655 4977 50  0000 C CNN
+F 2 "" H 6650 5150 50  0001 C CNN
+F 3 "" H 6650 5150 50  0001 C CNN
+	1    6650 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 4950 9150 4850
+$Comp
+L power:+5V #PWR?
+U 1 1 5F9C85F5
+P 9050 4950
+F 0 "#PWR?" H 9050 4800 50  0001 C CNN
+F 1 "+5V" H 9065 5123 50  0000 C CNN
+F 2 "" H 9050 4950 50  0001 C CNN
+F 3 "" H 9050 4950 50  0001 C CNN
+	1    9050 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 4950 9050 4950
+Connection ~ 9150 4950
+Text GLabel 8550 4650 0    50   Input ~ 0
+AS
+$Comp
+L 74xx:74HCT04 U?
+U 1 1 5F9CF777
+P 8850 4650
+F 0 "U?" H 8850 4967 50  0000 C CNN
+F 1 "74HCT04" H 8850 4876 50  0000 C CNN
+F 2 "" H 8850 4650 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 8850 4650 50  0001 C CNN
+	1    8850 4650
+	1    0    0    -1  
+$EndComp
+Text GLabel 2100 4550 0    50   Input ~ 0
+~BERR
+Text GLabel 9950 4950 2    50   Input ~ 0
+~DTACK
+Text GLabel 9950 5250 2    50   Input ~ 0
+~BERR
+Text Notes 5400 800  0    50   ~ 0
+Level of drive: 10uW\nEquivalent Series Resistance(ESR) @16MHz: 60-80 ΩMax\nCl (asked on twitter): ? pF\nCo: 7pF\n\nhttps://www.st.com/content/ccc/resource/technical/document/application_note/c6/eb/5e/11/e3/69/43/eb/CD00221665.pdf/files/CD00221665.pdf/jcr:content/translations/en.CD00221665.pdf\nhttp://ww1.microchip.com/downloads/en/appnotes/00826a.pdf\nhttps://www.electronics-tutorials.ws/oscillator/crystal.html\n\nCalculate C and R values\nChoose Hex or Hex with Shmit?
+$Comp
+L power:GND #PWR?
+U 1 1 5FA07D4F
+P 6650 2500
+AR Path="/5F9DA3F8/5FA07D4F" Ref="#PWR?"  Part="1" 
+AR Path="/6046B06D/5FA07D4F" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6650 2250 50  0001 C CNN
+F 1 "GND" H 6655 2327 50  0000 C CNN
+F 2 "" H 6650 2500 50  0001 C CNN
+F 3 "" H 6650 2500 50  0001 C CNN
+	1    6650 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FA0B43C
+P 5850 2350
+AR Path="/5F9DA3F8/5FA0B43C" Ref="C?"  Part="1" 
+AR Path="/6046B06D/5FA0B43C" Ref="C?"  Part="1" 
+F 0 "C?" H 5735 2304 50  0000 R CNN
+F 1 "22nF" H 5735 2395 50  0000 R CNN
+F 2 "" H 5888 2200 50  0001 C CNN
+F 3 "~" H 5850 2350 50  0001 C CNN
+	1    5850 2350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FA0B9DC
+P 6650 2350
+AR Path="/5F9DA3F8/5FA0B9DC" Ref="C?"  Part="1" 
+AR Path="/6046B06D/5FA0B9DC" Ref="C?"  Part="1" 
+F 0 "C?" H 6535 2304 50  0000 R CNN
+F 1 "22nF" H 6535 2395 50  0000 R CNN
+F 2 "" H 6688 2200 50  0001 C CNN
+F 3 "~" H 6650 2350 50  0001 C CNN
+	1    6650 2350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FA0F489
+P 6650 1850
+F 0 "R?" H 6720 1896 50  0000 L CNN
+F 1 "R" H 6720 1805 50  0000 L CNN
+F 2 "" V 6580 1850 50  0001 C CNN
+F 3 "~" H 6650 1850 50  0001 C CNN
+	1    6650 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Crystal_GND24 Y?
+U 1 1 5F9DAC72
+P 6250 2100
+F 0 "Y?" H 6400 2200 50  0000 L CNN
+F 1 "16MHz" H 6300 2300 50  0000 L CNN
+F 2 "" H 6250 2100 50  0001 C CNN
+F 3 "~" H 6250 2100 50  0001 C CNN
+	1    6250 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FA12F63
+P 6250 1050
+F 0 "R?" H 6320 1096 50  0000 L CNN
+F 1 "R" H 6320 1005 50  0000 L CNN
+F 2 "" V 6180 1050 50  0001 C CNN
+F 3 "~" H 6250 1050 50  0001 C CNN
+	1    6250 1050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6100 2100 5850 2100
+Wire Wire Line
+	5850 2100 5850 2200
+Wire Wire Line
+	5850 2100 5850 1600
+Wire Wire Line
+	5850 1050 6100 1050
+Connection ~ 5850 2100
+Wire Wire Line
+	6400 2100 6650 2100
+Wire Wire Line
+	6650 2100 6650 2000
+Wire Wire Line
+	6650 2200 6650 2100
+Connection ~ 6650 2100
+$Comp
+L 74xx:74HC04 U?
+U 1 1 5FA5A365
+P 6250 1600
+F 0 "U?" H 6250 1917 50  0000 C CNN
+F 1 "74HC04" H 6250 1826 50  0000 C CNN
+F 2 "" H 6250 1600 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 6250 1600 50  0001 C CNN
+	1    6250 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC04 U?
+U 2 1 5FA5AE9E
+P 7050 1600
+F 0 "U?" H 7050 1917 50  0000 C CNN
+F 1 "74HC04" H 7050 1826 50  0000 C CNN
+F 2 "" H 7050 1600 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 7050 1600 50  0001 C CNN
+	2    7050 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC04 U?
+U 3 1 5FA5BE7A
+P 7800 2850
+F 0 "U?" H 7800 3167 50  0000 C CNN
+F 1 "74HC04" H 7800 3076 50  0000 C CNN
+F 2 "" H 7800 2850 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 7800 2850 50  0001 C CNN
+	3    7800 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC04 U?
+U 4 1 5FA5CB1F
+P 7900 2950
+F 0 "U?" H 7900 3267 50  0000 C CNN
+F 1 "74HC04" H 7900 3176 50  0000 C CNN
+F 2 "" H 7900 2950 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 7900 2950 50  0001 C CNN
+	4    7900 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC04 U?
+U 5 1 5FA5D8F7
+P 8050 3050
+F 0 "U?" H 8050 3367 50  0000 C CNN
+F 1 "74HC04" H 8050 3276 50  0000 C CNN
+F 2 "" H 8050 3050 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 8050 3050 50  0001 C CNN
+	5    8050 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC04 U?
+U 6 1 5FA5E9F1
+P 8100 3150
+F 0 "U?" H 8100 3467 50  0000 C CNN
+F 1 "74HC04" H 8100 3376 50  0000 C CNN
+F 2 "" H 8100 3150 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 8100 3150 50  0001 C CNN
+	6    8100 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC04 U?
+U 7 1 5FA5FB0B
+P 8900 3100
+F 0 "U?" H 9130 3146 50  0000 L CNN
+F 1 "74HC04" H 9130 3055 50  0000 L CNN
+F 2 "" H 8900 3100 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 8900 3100 50  0001 C CNN
+	7    8900 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 1600 5850 1600
+Connection ~ 5850 1600
+Wire Wire Line
+	5850 1600 5850 1050
+Wire Wire Line
+	6550 1600 6650 1600
+Wire Wire Line
+	6650 1600 6650 1700
+Wire Wire Line
+	6650 1600 6750 1600
+Connection ~ 6650 1600
+Wire Wire Line
+	6650 1600 6650 1050
+Wire Wire Line
+	6650 1050 6400 1050
 $EndSCHEMATC

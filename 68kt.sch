@@ -28,7 +28,7 @@ $EndSheet
 Text Notes 5050 2100 0    50   ~ 0
 Memory Map\n$000000 $0FFFFF 1MiB RAM\n$100000 $17FFFF 1MiB Pseudo ROM\n$180000 $1FFFFF INVALID\n$200000 $27FFFF 1MiB Pseudo IO\n$280000 $3FFFFF INVALID\n$400000 $7FFFFF UNMAPPED\n\nRAM A20 address A19-A1\nROM A21 address A19-A1\nIO  A23 address A19-A1\nLOADER (A23-A1)\n\n
 Text Notes 650  5100 0    50   ~ 0
-JLCPCB Part Reference\n\n74HC04D,653 Hex inverter\n74HC14D,653 Hex inverting Schmitt trigger \n74HC138D,653 3-to-8 line decoder/demultiplexer; inverting\n74HC164D,653 8-bit serial-in, parallel-out shift register\n74HC165D,653 8-bit parallel-in/serial out shift register\n74HC245D,653 Octal bus tranceiver; 3-state\n74HC595D,118 8-bit serial-in, serial or parallel-out shift register with output latches; 3-state\n\n\n2N7002 MOSFET N TRENCH 60V 115MA 2.5V @ 250UA 7.5 \nAMS1117-3.3 1A LOW DROPOUT VOLTAGE REGULATOR\nFT232RL-REEL USB UART I.C.\nATMEGA2560-16AU 8-bit Atmel Microcontroller with 16/32/64KB In-System Programmable Flash\nIS62WV51216BLL-55TLI  512K x 16 LOW VOLTAGE,ULTRA LOW POWER CMOS STATIC RAM\n\nX322516MLB4SI SMD CRYSTAL RESONATORS 16MHZ\n\nTAJA106K016RNJ TANTALUM CAPACITORS 10UF 16V CASE-A_3216\n0603WAF820JT5E CHIP RESISTOR - SURFACE MOUNT 82OHMS ±1% 1/10W 0603 ROHS Basic Part \n0603WAF1500T5E  CHIP RESISTOR - SURFACE MOUNT 150OHMS ±1% 1/10W 060\n\n19-217/GHC-YR1S2/3T LIGHT EMITTING DIODES (LED) GREEN 520~535NM 112~258MCD@20MA TOP VIEW 0603 ROHS Basic Part\nvcc=5; i=20; vf=3.3; (vcc-vf)/(i/1000) = 85 Ohms (0.066W) (82 Ohms  0.1W)\n\nKT-0603R LIGHT EMITTING DIODES (LED) RED 520~625NM 90~100M\nvcc=5; i=20; vf=2.1; (vcc-vf)/(i/1000) = 145 Ohms (0.042) (150 Ohms  0.1W)\n\nhttps://ohmslawcalculator.com/led-resistor-calculator
+JLCPCB Part Reference\n\n74HC04D,653 Hex inverter\n74HC14D,653 Hex inverting Schmitt trigger \n74HC138D,653 3-to-8 line decoder/demultiplexer; inverting\n74HC164D,653 8-bit serial-in, parallel-out shift register\n74HC165D,653 8-bit parallel-in/serial out shift register\n74HC245D,653 Octal bus tranceiver; 3-state\n74HC595D,118 8-bit serial-in, serial or parallel-out shift register with output latches; 3-state\n\n\n2N7002 MOSFET N TRENCH 60V 115MA 2.5V @ 250UA 7.5 \nAMS1117-3.3 1A LOW DROPOUT VOLTAGE REGULATOR\nFT232RL-REEL USB UART I.C.\nATMEGA2560-16AU 8-bit Atmel Microcontroller with 16/32/64KB In-System Programmable Flash\nIS62WV51216BLL-55TLI  512K x 16 LOW VOLTAGE,ULTRA LOW POWER CMOS STATIC RAM\n\nSRV05-4-P-T7  ULTRA LOW CAPACITANCE STEERING DIODE/TVS ARRAY\n\nX322516MLB4SI SMD CRYSTAL RESONATORS 16MHZ\n\nTAJA106K016RNJ TANTALUM CAPACITORS 10UF 16V CASE-A_3216\n0603WAF820JT5E CHIP RESISTOR - SURFACE MOUNT 82OHMS ±1% 1/10W 0603 ROHS Basic Part \n0603WAF1500T5E  CHIP RESISTOR - SURFACE MOUNT 150OHMS ±1% 1/10W 060\n\n19-217/GHC-YR1S2/3T LIGHT EMITTING DIODES (LED) GREEN 520~535NM 112~258MCD@20MA TOP VIEW 0603 ROHS Basic Part\nvcc=5; i=20; vf=3.3; (vcc-vf)/(i/1000) = 85 Ohms (0.066W) (82 Ohms  0.1W)\n\nKT-0603R LIGHT EMITTING DIODES (LED) RED 520~625NM 90~100M\nvcc=5; i=20; vf=2.1; (vcc-vf)/(i/1000) = 145 Ohms (0.042) (150 Ohms  0.1W)\n\nhttps://ohmslawcalculator.com/led-resistor-calculator
 Text Notes 650  6000 0    50   ~ 0
 TODO\nhalt led\nreset led\n68k clock\natmega clock caps\n68k addressing, /as /dtack, /uds /lds\ncalculate pull pu and pull down resitors\ncheck no shorts\ncheck directions of signals\n\nhttps://www.nxp.com/docs/en/user-guide/MC68332UM.pdf
 Text Notes 600  7650 0    50   ~ 0
@@ -441,7 +441,7 @@ $EndComp
 Wire Wire Line
 	8500 5750 8500 5850
 Text Notes 6800 6450 0    50   ~ 0
-https://www.amazon.co.uk/YOUMILE-Connector-Adapter-2-54mm-Converter-Microusb/dp/B07TVHR9LF\nhttps://datasheet.lcsc.com/szlcsc/1811201117_Advanced-Monolithic-Systems-AMS-AMS1117-3-3_C6186.pdf
+https://www.amazon.co.uk/YOUMILE-Connector-Adapter-2-54mm-Converter-Microusb/dp/B07TVHR9LF\nhttps://datasheet.lcsc.com/szlcsc/ProTek-Devices-SRV05-4-P-T7_C85364.pdf\nhttps://datasheet.lcsc.com/szlcsc/1811201117_Advanced-Monolithic-Systems-AMS-AMS1117-3-3_C6186.pdf
 $Comp
 L power:GND #PWR?
 U 1 1 61507868
@@ -605,4 +605,33 @@ Wire Wire Line
 	6750 4400 6750 4500
 Wire Wire Line
 	7600 3800 7700 3800
+$Comp
+L Power_Protection:SRV05-4 U?
+U 1 1 5F9F1E54
+P 6050 5600
+F 0 "U?" H 6200 6050 50  0000 C CNN
+F 1 "SRV05-4" H 6300 6150 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 6750 5150 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub/Collateral/SRV05-4-D.PDF" H 6050 5600 50  0001 C CNN
+	1    6050 5600
+	1    0    0    -1  
+$EndComp
+Text GLabel 5950 5000 0    50   Output ~ 0
+USB_VBUS
+Text GLabel 5550 5500 0    50   BiDi ~ 0
+USB_D+
+Text GLabel 5550 5700 0    50   BiDi ~ 0
+USB_D-
+Text GLabel 5950 6200 0    50   UnSpc ~ 0
+USB_GND
+NoConn ~ 6550 5500
+NoConn ~ 6550 5700
+Wire Wire Line
+	6050 6100 6050 6200
+Wire Wire Line
+	6050 6200 5950 6200
+Wire Wire Line
+	5950 5000 6050 5000
+Wire Wire Line
+	6050 5000 6050 5100
 $EndSCHEMATC

@@ -100,21 +100,10 @@ F 3 "" H 10150 2150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR03
-U 1 1 610E80EA
-P 9300 2150
-F 0 "#PWR03" H 9300 2000 50  0001 C CNN
-F 1 "+3.3V" H 9315 2323 50  0000 C CNN
-F 2 "" H 9300 2150 50  0001 C CNN
-F 3 "" H 9300 2150 50  0001 C CNN
-	1    9300 2150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR02
+L power:+5V #PWR03
 U 1 1 610E88AA
 P 9300 1250
-F 0 "#PWR02" H 9300 1100 50  0001 C CNN
+F 0 "#PWR03" H 9300 1100 50  0001 C CNN
 F 1 "+5V" H 9315 1423 50  0000 C CNN
 F 2 "" H 9300 1250 50  0001 C CNN
 F 3 "" H 9300 1250 50  0001 C CNN
@@ -132,52 +121,14 @@ F 3 "~" H 9300 1250 50  0001 C CNN
 	1    9300 1250
 	-1   0    0    1   
 $EndComp
-$Comp
-L power:PWR_FLAG #FLG02
-U 1 1 610EA0B2
-P 9300 2150
-F 0 "#FLG02" H 9300 2225 50  0001 C CNN
-F 1 "PWR_FLAG" H 9300 2323 50  0000 C CNN
-F 2 "" H 9300 2150 50  0001 C CNN
-F 3 "~" H 9300 2150 50  0001 C CNN
-	1    9300 2150
-	-1   0    0    1   
-$EndComp
-Text GLabel 8950 5100 0    50   Input ~ 0
+Text GLabel 9650 5000 0    50   Input ~ 0
 LOADER_CON_RX
-Text GLabel 8950 5200 0    50   Output ~ 0
+Text GLabel 9650 5100 0    50   Output ~ 0
 LOADER_CON_TX
-$Comp
-L power:GND #PWR?
-U 1 1 613FD705
-P 9550 5700
-AR Path="/5F9DA3F8/613FD705" Ref="#PWR?"  Part="1" 
-AR Path="/613FD705" Ref="#PWR04"  Part="1" 
-F 0 "#PWR04" H 9550 5450 50  0001 C CNN
-F 1 "GND" H 9555 5527 50  0000 C CNN
-F 2 "" H 9550 5700 50  0001 C CNN
-F 3 "" H 9550 5700 50  0001 C CNN
-	1    9550 5700
-	1    0    0    -1  
-$EndComp
-Text GLabel 8950 5400 0    50   Output ~ 0
-MOSI
-Text GLabel 8950 5500 0    50   Input ~ 0
-MISO
-Text GLabel 8950 5300 0    50   Output ~ 0
-SCK
-Text GLabel 9450 5100 2    50   Input ~ 0
+Text GLabel 10150 5000 2    50   Input ~ 0
 68KT_CON_RX
-Text GLabel 9450 5200 2    50   Output ~ 0
+Text GLabel 10150 5100 2    50   Output ~ 0
 68KT_CON_TX
-Text GLabel 9850 3500 0    50   Input ~ 0
-USB_VBUS
-Text GLabel 9850 3750 0    50   BiDi ~ 0
-USB_D+
-Text GLabel 9850 3950 0    50   BiDi ~ 0
-USB_D-
-Text GLabel 9850 4200 0    50   UnSpc ~ 0
-USB_GND
 Text Notes 7050 6350 0    50   ~ 0
 https://www.amazon.co.uk/YOUMILE-Connector-Adapter-2-54mm-Converter-Microusb/dp/B07TVHR9LF
 $Comp
@@ -204,7 +155,7 @@ F 3 "~" H 10150 1100 50  0001 C CNN
 $EndComp
 Text Notes 550  7700 0    50   ~ 0
 URLS\nhttps://jlcpcb.com/parts\nhttps://hackaday.com/2016/12/05/taking-it-to-another-level-making-3-3v-and-5v-logic-communicate-with-level-shifters/\nhttps://electronics.stackexchange.com/questions/81580/step-up-3-3v-to-5v-for-digital-i-o\nhttps://electronics.stackexchange.com/questions/476140/driving-a-74hc245-in-one-direction-with-3-3v-when-vcc-is-5v\nhttps://www.eejournal.com/article/ultimate-guide-to-switch-debounce-part-4/\nhttps://www.newark.com/pdfs/techarticles/microchip/3_3vto5vAnalogTipsnTricksBrchr.pdf\nhttp://ee-classes.usc.edu/ee459/library/documents/I2C.pdf\nhttps://www.hobbytronics.co.uk/mosfet-voltage-level-converter\nhttps://rosco-m68k.com/\nhttps://www.aslak.net/\nhttp://www.users.cloud9.net/~stark/hardw68k.htm\nhttp://www.bitsavers.org/pdf/peripheralTechnology/PT68K2/PT68K-2_Users_Manual_Jun88.pdf\nhttps://www.nxp.com/docs/en/reference-manual/MC68000UM.pdf\nhttp://ww1.microchip.com/downloads/en/appnotes/atmel-2521-avr-hardware-design-considerations_applicationnote_avr042.pdf\nhttps://www.chiark.greenend.org.uk/~theom/electronics/has/ha68ksys.pdf\nhttps://www.scss.tcd.ie/Michael.Manzke/1ba3/1BA3_34_io.pdf\nhttps://github.com/jtsiomb/m68kcomputer\nhttps://www.ist-schlau.de/\nhttps://www.nxp.com/docs/en/user-guide/MC68332UM.pdf\nhttps://ohmslawcalculator.com/led-resistor-calculator
-Text GLabel 8200 3750 0    50   UnSpc ~ 0
+Text GLabel 7600 3700 0    50   UnSpc ~ 0
 USB_GND
 Text Notes 600  5350 0    50   ~ 0
 JLCPCB Part Reference\n\n74HC04D,653 Hex inverter\n74HC14D,653 Hex inverting Schmitt trigger \n74HC138D,653 3-to-8 line decoder/demultiplexer; inverting\n74HC164D,653 8-bit serial-in, parallel-out shift register\n74HC165D,653 8-bit parallel-in/serial out shift register\n74HC245D,653 Octal bus tranceiver; 3-state\n74HC595D,118 8-bit serial-in, serial or parallel-out shift register with output latches; 3-state\n\nSN74LVC4245APWR OCTALBUSTRANSCEIVERAND3.3-VTO5-VSHIFTERWITH3-STATEOUTPUTS\n\n2N7002 MOSFET N TRENCH 60V 115MA 2.5V @ 250UA 7.5 \nAMS1117-3.3 1A LOW DROPOUT VOLTAGE REGULATOR\nFT232RL-REEL USB UART I.C.\nATMEGA2560-16AU 8-bit Atmel Microcontroller with 16/32/64KB In-System Programmable Flash\nIS62WV51216BLL-55TLI  512K x 16 LOW VOLTAGE,ULTRA LOW POWER CMOS STATIC RAM\n\nSRV05-4-P-T7  ULTRA LOW CAPACITANCE STEERING DIODE/TVS ARRAY\n\nX322516MLB4SI SMD CRYSTAL RESONATORS 16MHZ\n\nTAJA106K016RNJ TANTALUM CAPACITORS 10UF 16V CASE-A_3216\n0603WAF820JT5E CHIP RESISTOR - SURFACE MOUNT 82OHMS ±1% 1/10W 0603 ROHS Basic Part \n0603WAF1500T5E  CHIP RESISTOR - SURFACE MOUNT 150OHMS ±1% 1/10W 060\n\n19-217/GHC-YR1S2/3T LIGHT EMITTING DIODES (LED) GREEN 520~535NM 112~258MCD@20MA TOP VIEW 0603 ROHS Basic Part\nvcc=5; i=20; vf=3.3; (vcc-vf)/(i/1000) = 85 Ohms (0.066W) (82 Ohms  0.1W)\n\nKT-0603R LIGHT EMITTING DIODES (LED) RED 520~625NM 90~100M\nvcc=5; i=20; vf=2.1; (vcc-vf)/(i/1000) = 145 Ohms (0.042) (150 Ohms  0.1W)\n\n
@@ -217,139 +168,199 @@ Loader ATmega2560\nLoader reset\nLoader clock\nUSB to serial\nSerial LEDs\nGPIO 
 Text Notes 5100 1400 0    50   ~ 0
 CPU M68000\nCPU clock\nCPU reset\nCPU reset/halt LEDs
 Wire Bus Line
-	7000 3300 11100 3300
-Wire Bus Line
-	11100 3300 11100 6400
-Wire Bus Line
-	11100 6400 7000 6400
-Wire Bus Line
 	7000 6400 7000 3300
 Text Notes 7050 3450 0    50   ~ 0
 External connections and headers
 $Comp
 L Connector:USB_B_Micro J?
 U 1 1 5FB931B3
-P 8500 4150
+P 7900 4100
 AR Path="/5F9D5E69/5FB931B3" Ref="J?"  Part="1" 
 AR Path="/5F9DA3F8/5FB931B3" Ref="J?"  Part="1" 
 AR Path="/5FB931B3" Ref="J1"  Part="1" 
 AR Path="/5FA1AEF3/5FB931B3" Ref="J?"  Part="1" 
-F 0 "J1" H 8557 4617 50  0000 C CNN
-F 1 "USB_B_Micro" H 8557 4526 50  0000 C CNN
-F 2 "68kt:USB" H 8650 4100 50  0001 C CNN
-F 3 "~" H 8650 4100 50  0001 C CNN
-	1    8500 4150
+F 0 "J1" H 7957 4567 50  0000 C CNN
+F 1 "USB_B_Micro" H 7957 4476 50  0000 C CNN
+F 2 "68kt:USB" H 8050 4050 50  0001 C CNN
+F 3 "~" H 8050 4050 50  0001 C CNN
+	1    7900 4100
 	-1   0    0    1   
 $EndComp
-Text GLabel 8200 4150 0    50   BiDi ~ 0
+Text GLabel 7600 4100 0    50   BiDi ~ 0
 USB_D+
-Text GLabel 8200 4050 0    50   BiDi ~ 0
+Text GLabel 7600 4000 0    50   BiDi ~ 0
 USB_D-
-Text GLabel 8200 4350 0    50   Output ~ 0
+Text GLabel 7600 4300 0    50   Output ~ 0
 USB_VBUS
 Wire Wire Line
-	8600 3750 8500 3750
+	8000 3700 7900 3700
 Wire Wire Line
-	8200 3750 8500 3750
-Connection ~ 8500 3750
-NoConn ~ 8200 3950
+	7600 3700 7900 3700
+Connection ~ 7900 3700
+NoConn ~ 7600 3900
 $Sheet
 S 1000 1000 1500 1500
 U 5FA1AEF3
 F0 "Power" 118
 F1 "Power.sch" 50
 $EndSheet
-$Comp
-L Connector:TestPoint TP?
-U 1 1 603545D1
-P 9850 3750
-AR Path="/5F9DA3F8/603545D1" Ref="TP?"  Part="1" 
-AR Path="/603545D1" Ref="TP2"  Part="1" 
-F 0 "TP2" V 9804 3938 50  0000 L CNN
-F 1 "Test USB_D+" V 9895 3938 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10050 3750 50  0001 C CNN
-F 3 "~" H 10050 3750 50  0001 C CNN
-	1    9850 3750
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP?
-U 1 1 603559E9
-P 9850 3950
-AR Path="/5F9DA3F8/603559E9" Ref="TP?"  Part="1" 
-AR Path="/603559E9" Ref="TP3"  Part="1" 
-F 0 "TP3" V 9804 4138 50  0000 L CNN
-F 1 "Test USB_D-" V 9895 4138 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10050 3950 50  0001 C CNN
-F 3 "~" H 10050 3950 50  0001 C CNN
-	1    9850 3950
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP?
-U 1 1 60355C7F
-P 9850 4200
-AR Path="/5F9DA3F8/60355C7F" Ref="TP?"  Part="1" 
-AR Path="/60355C7F" Ref="TP4"  Part="1" 
-F 0 "TP4" V 9804 4388 50  0000 L CNN
-F 1 "Test USB_GND" V 9895 4388 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10050 4200 50  0001 C CNN
-F 3 "~" H 10050 4200 50  0001 C CNN
-	1    9850 4200
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP?
-U 1 1 60356203
-P 9850 3500
-AR Path="/5F9DA3F8/60356203" Ref="TP?"  Part="1" 
-AR Path="/60356203" Ref="TP1"  Part="1" 
-F 0 "TP1" V 9804 3688 50  0000 L CNN
-F 1 "Test USB_VBUS" V 9895 3688 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10050 3500 50  0001 C CNN
-F 3 "~" H 10050 3500 50  0001 C CNN
-	1    9850 3500
-	0    1    1    0   
-$EndComp
-Text GLabel 9450 5300 2    50   Output ~ 0
-SCL
-Text GLabel 9450 5400 2    50   BiDi ~ 0
+Text GLabel 8050 5800 0    50   BiDi ~ 0
 SDA
 $Comp
 L power:GND #PWR?
-U 1 1 613FD70E
-P 8850 5700
-AR Path="/5F9DA3F8/613FD70E" Ref="#PWR?"  Part="1" 
-AR Path="/613FD70E" Ref="#PWR01"  Part="1" 
-F 0 "#PWR01" H 8850 5450 50  0001 C CNN
-F 1 "GND" H 8855 5527 50  0000 C CNN
-F 2 "" H 8850 5700 50  0001 C CNN
-F 3 "" H 8850 5700 50  0001 C CNN
-	1    8850 5700
+U 1 1 6056FE72
+P 7500 5800
+AR Path="/5F9DA3F8/6056FE72" Ref="#PWR?"  Part="1" 
+AR Path="/6056FE72" Ref="#PWR01"  Part="1" 
+F 0 "#PWR01" H 7500 5550 50  0001 C CNN
+F 1 "GND" H 7505 5627 50  0000 C CNN
+F 2 "" H 7500 5800 50  0001 C CNN
+F 3 "" H 7500 5800 50  0001 C CNN
+	1    7500 5800
+	1    0    0    -1  
+$EndComp
+Text GLabel 8050 5900 0    50   Output ~ 0
+SCL
+$Comp
+L Connector_Generic:Conn_01x04 J2
+U 1 1 60574B7A
+P 8250 5800
+F 0 "J2" H 8330 5792 50  0000 L CNN
+F 1 "I2C" H 8330 5701 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 8250 5800 50  0001 C CNN
+F 3 "~" H 8250 5800 50  0001 C CNN
+	1    8250 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 5700 7500 5700
+Wire Wire Line
+	7500 5700 7500 5800
+Wire Wire Line
+	8250 5000 8100 5000
+Wire Wire Line
+	8250 4900 8250 5000
+$Comp
+L power:+5V #PWR09
+U 1 1 6055A235
+P 8250 4900
+F 0 "#PWR09" H 8250 4750 50  0001 C CNN
+F 1 "+5V" H 8265 5073 50  0000 C CNN
+F 2 "" H 8250 4900 50  0001 C CNN
+F 3 "" H 8250 4900 50  0001 C CNN
+	1    8250 4900
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x06_Odd_Even J2
-U 1 1 6038C8F0
-P 9150 5300
-F 0 "J2" H 9200 5717 50  0000 C CNN
-F 1 "Conn_02x06_Odd_Even" H 9200 5626 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" H 9150 5300 50  0001 C CNN
-F 3 "~" H 9150 5300 50  0001 C CNN
-	1    9150 5300
+L Jumper:Jumper_2_Open JP1
+U 1 1 60558CC5
+P 7900 5000
+F 0 "JP1" H 7900 5235 50  0000 C CNN
+F 1 "Jumper_2_Open" H 7900 5144 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7900 5000 50  0001 C CNN
+F 3 "~" H 7900 5000 50  0001 C CNN
+	1    7900 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6058C874
+P 8850 4800
+AR Path="/5F9DA3F8/6058C874" Ref="#PWR?"  Part="1" 
+AR Path="/6058C874" Ref="#PWR02"  Part="1" 
+F 0 "#PWR02" H 8850 4550 50  0001 C CNN
+F 1 "GND" H 8855 4627 50  0000 C CNN
+F 2 "" H 8850 4800 50  0001 C CNN
+F 3 "" H 8850 4800 50  0001 C CNN
+	1    8850 4800
+	1    0    0    -1  
+$EndComp
+NoConn ~ 9650 4800
+NoConn ~ 9650 5200
+Text GLabel 7700 5000 0    50   BiDi ~ 0
++5V_JMP
+Text GLabel 8050 6000 0    50   BiDi ~ 0
++5V_JMP
+Text GLabel 9650 4900 0    50   BiDi ~ 0
++5V_JMP
+$Comp
+L Connector_Generic:Conn_02x06_Odd_Even J3
+U 1 1 6059B3AD
+P 9850 4900
+F 0 "J3" H 9900 5317 50  0000 C CNN
+F 1 "Consoles" H 9900 5226 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" H 9850 4900 50  0001 C CNN
+F 3 "~" H 9850 4900 50  0001 C CNN
+	1    9850 4900
+	1    0    0    -1  
+$EndComp
+NoConn ~ 10150 5200
+NoConn ~ 10150 4800
+Wire Wire Line
+	9650 4700 8850 4700
+Wire Wire Line
+	8850 4700 8850 4800
+Text GLabel 10150 4900 2    50   BiDi ~ 0
++5V_JMP
+$Comp
+L power:GND #PWR?
+U 1 1 605BC88A
+P 10850 4800
+AR Path="/5F9DA3F8/605BC88A" Ref="#PWR?"  Part="1" 
+AR Path="/605BC88A" Ref="#PWR04"  Part="1" 
+F 0 "#PWR04" H 10850 4550 50  0001 C CNN
+F 1 "GND" H 10855 4627 50  0000 C CNN
+F 2 "" H 10850 4800 50  0001 C CNN
+F 3 "" H 10850 4800 50  0001 C CNN
+	1    10850 4800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8950 5600 8850 5600
+	10850 4800 10850 4700
 Wire Wire Line
-	8850 5600 8850 5700
+	10850 4700 10150 4700
+Wire Bus Line
+	11100 6400 7000 6400
+Wire Bus Line
+	7000 3300 11100 3300
+Text GLabel 10200 5700 2    50   BiDi ~ 0
++5V_JMP
+Wire Bus Line
+	11100 3300 11100 6400
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J4
+U 1 1 60564A16
+P 9900 5800
+F 0 "J4" H 9950 6117 50  0000 C CNN
+F 1 "SPI" H 9950 6026 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 9900 5800 50  0001 C CNN
+F 3 "~" H 9900 5800 50  0001 C CNN
+	1    9900 5800
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	9450 5500 9550 5500
+	10300 5900 10300 6000
 Wire Wire Line
-	9550 5500 9550 5600
-Wire Wire Line
-	9450 5600 9550 5600
-Connection ~ 9550 5600
-Wire Wire Line
-	9550 5600 9550 5700
+	10200 5900 10300 5900
+Text GLabel 9700 5800 0    50   Input ~ 0
+SCK
+Text GLabel 9700 5700 0    50   Output ~ 0
+MISO
+Text GLabel 9700 5900 0    50   Output ~ 0
+~LOADER_RESET
+$Comp
+L power:GND #PWR?
+U 1 1 613FD70E
+P 10300 6000
+AR Path="/5F9DA3F8/613FD70E" Ref="#PWR?"  Part="1" 
+AR Path="/613FD70E" Ref="#PWR010"  Part="1" 
+F 0 "#PWR010" H 10300 5750 50  0001 C CNN
+F 1 "GND" H 10305 5827 50  0000 C CNN
+F 2 "" H 10300 6000 50  0001 C CNN
+F 3 "" H 10300 6000 50  0001 C CNN
+	1    10300 6000
+	1    0    0    -1  
+$EndComp
+Text GLabel 10200 5800 2    50   Input ~ 0
+MOSI
 $EndSCHEMATC

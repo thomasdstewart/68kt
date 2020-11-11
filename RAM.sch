@@ -469,27 +469,19 @@ Text GLabel 9050 2450 0    50   Input ~ 0
 3A14
 Text GLabel 9050 2350 0    50   Input ~ 0
 3A13
-Text GLabel 9050 2250 0    50   Input ~ 0
-3A12
-Text GLabel 9050 2150 0    50   Input ~ 0
-3A11
-Text GLabel 9050 2050 0    50   Input ~ 0
-3A10
-Text GLabel 9050 1950 0    50   Input ~ 0
-3A9
 Text GLabel 9050 1850 0    50   Input ~ 0
 3A8
 Text GLabel 9050 1750 0    50   Input ~ 0
 3A7
 Text GLabel 9050 1650 0    50   Input ~ 0
 3A6
-Text GLabel 9050 1550 0    50   Input ~ 0
+Text GLabel 9050 1150 0    50   Input ~ 0
 3A5
-Text GLabel 9050 1450 0    50   Input ~ 0
+Text GLabel 9050 1250 0    50   Input ~ 0
 3A4
 Text GLabel 9050 1350 0    50   Input ~ 0
 3A3
-Text GLabel 9050 1250 0    50   Input ~ 0
+Text GLabel 9050 1450 0    50   Input ~ 0
 3A2
 Text GLabel 10250 2650 2    50   BiDi ~ 0
 3D15
@@ -521,7 +513,7 @@ Text GLabel 10250 1350 2    50   BiDi ~ 0
 3D2
 Text GLabel 10250 1250 2    50   BiDi ~ 0
 3D1
-Text GLabel 9050 1150 0    50   Input ~ 0
+Text GLabel 9050 1550 0    50   Input ~ 0
 3A1
 $Comp
 L power:GND #PWR?
@@ -582,7 +574,7 @@ U 1 1 5FA60A0B
 P 6100 3300
 F 0 "R2" H 6170 3346 50  0000 L CNN
 F 1 "R" H 6170 3255 50  0000 L CNN
-F 2 "" V 6030 3300 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6030 3300 50  0001 C CNN
 F 3 "~" H 6100 3300 50  0001 C CNN
 	1    6100 3300
 	1    0    0    -1  
@@ -613,7 +605,7 @@ U 1 1 5FA33FE0
 P 6100 1650
 F 0 "R1" H 6170 1696 50  0000 L CNN
 F 1 "R" H 6170 1605 50  0000 L CNN
-F 2 "" V 6030 1650 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6030 1650 50  0001 C CNN
 F 3 "~" H 6100 1650 50  0001 C CNN
 	1    6100 1650
 	1    0    0    -1  
@@ -870,7 +862,7 @@ U 1 1 5FD5F740
 P 6100 5000
 F 0 "R3" H 6170 5046 50  0000 L CNN
 F 1 "R" H 6170 4955 50  0000 L CNN
-F 2 "" V 6030 5000 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6030 5000 50  0001 C CNN
 F 3 "~" H 6100 5000 50  0001 C CNN
 	1    6100 5000
 	1    0    0    -1  
@@ -1360,7 +1352,7 @@ U 1 1 604D6335
 P 7550 4600
 F 0 "R4" H 7480 4554 50  0000 R CNN
 F 1 "R" H 7480 4645 50  0000 R CNN
-F 2 "" V 7480 4600 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7480 4600 50  0001 C CNN
 F 3 "~" H 7550 4600 50  0001 C CNN
 	1    7550 4600
 	0    -1   -1   0   
@@ -1371,7 +1363,7 @@ U 1 1 604D74D0
 P 7550 4850
 F 0 "R5" H 7480 4804 50  0000 R CNN
 F 1 "R" H 7480 4895 50  0000 R CNN
-F 2 "" V 7480 4850 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7480 4850 50  0001 C CNN
 F 3 "~" H 7550 4850 50  0001 C CNN
 	1    7550 4850
 	0    -1   -1   0   
@@ -1382,7 +1374,7 @@ U 1 1 604D7B8F
 P 7550 5100
 F 0 "R6" H 7480 5054 50  0000 R CNN
 F 1 "R" H 7480 5145 50  0000 R CNN
-F 2 "" V 7480 5100 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7480 5100 50  0001 C CNN
 F 3 "~" H 7550 5100 50  0001 C CNN
 	1    7550 5100
 	0    -1   -1   0   
@@ -1393,7 +1385,7 @@ U 1 1 604D82F9
 P 7550 5350
 F 0 "R7" H 7480 5304 50  0000 R CNN
 F 1 "R" H 7480 5395 50  0000 R CNN
-F 2 "" V 7480 5350 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7480 5350 50  0001 C CNN
 F 3 "~" H 7550 5350 50  0001 C CNN
 	1    7550 5350
 	0    -1   -1   0   
@@ -1404,7 +1396,7 @@ U 1 1 604D8A4C
 P 7550 5600
 F 0 "R8" H 7480 5554 50  0000 R CNN
 F 1 "R" H 7480 5645 50  0000 R CNN
-F 2 "" V 7480 5600 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7480 5600 50  0001 C CNN
 F 3 "~" H 7550 5600 50  0001 C CNN
 	1    7550 5600
 	0    -1   -1   0   
@@ -1447,4 +1439,12 @@ Wire Wire Line
 Connection ~ 7800 4600
 Wire Wire Line
 	7800 4600 7800 4550
+Text GLabel 9050 2250 0    50   Input ~ 0
+3A9
+Text GLabel 9050 2150 0    50   Input ~ 0
+3A10
+Text GLabel 9050 2050 0    50   Input ~ 0
+3A11
+Text GLabel 9050 1950 0    50   Input ~ 0
+3A12
 $EndSCHEMATC
